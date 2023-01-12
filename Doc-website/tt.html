@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="navbar">
+      <header class="mhead">Java</header>
+      <ul>
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+       
+        <li>
+          <a class="nav-link" href="#Java"
+            >Java</a
+          >
+        </li>
+        <li><a class="nav-link" href="#Hello_world">Hello world</a></li>
+        <li><a class="nav-link" href="#Variables">Variables</a></li>
+        <li>
+          <a class="nav-link" href="#Declaring_Member_Variables"
+            >Declaring Member Variables</a
+            >
+        </li>
+        <li><a class="nav-link" href="#Variable_scope">Variable scope</a></li>
+        <li>
+          <a class="nav-link" href="#Global_variables">Global variables</a>
+        </li>
+        <li><a class="nav-link" href="#Constants">Constants</a></li>
+        <li><a class="nav-link" href="#Data_types">Data types</a></li>
+        <li>
+          <a class="nav-link" href="#if...else_statement"
+            >if...else statement</a
+          >
+        </li>
+        <li><a class="nav-link" href="#while_statement">while statement</a></li>
+        <li>
+          <a class="nav-link"href="#Function_declarations"
+            >Function declarations</a
+          >
+        </li>
+        <li><a class="nav-link"href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>
+            Java is a popular programming language, created in 1995.
+
+It is owned by Oracle, and more than 3 billion devices run Java.
+          </p></article></section>
+
+          <section class="main-section" id="Java"><header>Java</header><p>
+          OOP stands for Object-Oriented Programming.
+
+Procedural programming is about writing procedures or methods that perform operations on the data, while object-oriented programming is about creating objects that contain both data and methods.
+
+Object-oriented programming has several advantages over procedural programming:
+          </p>
+          <ul>
+            <li>
+              OOP is faster and easier to execute
+            </li>
+            <li>
+              OOP provides a clear structure for the programs
+            </li>
+            <li>OOP helps to keep the Java code DRY "Don't Repeat Yourself", and makes the code easier to maintain, modify and debug</li>
+            <li>OOP makes it possible to create full reusable applications with less code and shorter development time</li>
+          </ul>
+        </article>
+      </section>
+    
+      <section class="main-section" id="Hello_world">
+        <header>Hello world</header>
+        <article>
+         A "Hello, World!" is a simple program that outputs Hello, World! on the screen. Since it's a very simple program, it's often used to introduce a new programming language to a newbie.
+
+Let's explore how Java "Hello, World!" program works.
+          <code>
+            class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!"); 
+    }
+}
+          </code>
+    <code><h1>OUTPUT</h1>Hello, World!</code>
+        </article>
+      </section>
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <p>
+          Variables are containers for storing data values.
+
+In Java, there are different types of variables, for example: </p>
+<ul>
+  <li><strong>String</strong> - stores text, such as "Hello". String values are surrounded by double quotes</li>
+  <li>
+    <strong>int</strong> - stores integers (whole numbers), without decimals, such as 123 or -123
+  </li>
+  <li><strong>float</strong> - stores floating point numbers, with decimals, such as 19.99 or -19.99</li>
+  <li>
+    <strong>char</strong> - stores single characters, such as 'a' or 'B'. Char values are surrounded by single quotes
+  </li>
+  <li>
+    <strong>boolean</strong> - stores values with two states: true or false
+  </li>
+</ul>
+
+      </section>
+      <section class="main-section" id="Declaring_Member_Variables">
+        <header>Declaring Member Variables</header>
+        <article>
+          There are several kinds of variables:
+          <p>
+           <ul>
+             <li>Member variables in a class—these are called fields.</li>
+              <li>Variables in a method or block of code—these are called local variables.</li>
+               <li>Variables in method declarations—these are called parameters.</li>
+             </ul> </p>
+      <p>The Bicycle class uses the following lines of code to define its fields:</p> 
+      <pre>public int cadence;
+public int gear;
+public int speed;</pre>   
+
+<p>Field declarations are composed of three components, in order:</p>
+<ol>
+  <li>Zero or more modifiers, such as public or private.</li>
+  <li>The field's type.</li>
+  <li>The field's name.</li>
+</ol>
+<p>The fields of Bicycle are named cadence, gear, and speed and are all of data type integer (int). The public keyword identifies these fields as public members, accessible by any object that can access the class.</p>
+<h2>Access Modifiers</h2>
+<p>The first (left-most) modifier used lets you control what other classes have access to a member field. For the moment, consider only public and private. Other access modifiers will be discussed later</p>
+            
+        </article>
+      </section>
+      <section class="main-section" id="Variable_scope">
+        <header>Variable scope</header>
+        <article>
+          <p>
+           
+          </p>
+
+          <p>
+            
+          </p>
+        
+        </article>
+      </section>
+      <section class="main-section" id="Global_variables">
+        <header>Global variables</header>
+        <article>
+          
+        </article>
+      </section>
+      <section class="main-section" id="Constants">
+        <header>Constants</header>
+        <article>
+         
+        </article>
+      </section>
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <code>int myNum = 5;               // Integer (whole number)
+float myFloatNum = 5.99f;    // Floating point number
+char myLetter = 'D';         // Character
+boolean myBool = true;       // Boolean
+String myText = "Hello";     // String</code>
+          
+        </article>
+      </section>
+      <section class="main-section" id="if...else_statement">
+        <header>if...else statement</header>
+        <article>
+          <code>int time = 20;
+if (time < 18) {
+  System.out.println("Good day.");
+} else {
+  System.out.println("Good evening.");
+}
+// Outputs "Good evening."</code>
+         
+        </article>
+      </section>
+      <section class="main-section" id="while_statement">
+        <header>while statement</header>
+        <article>
+          <code>int i = 0;
+do {
+  System.out.println(i);
+  i++;
+}
+while (i < 5);
+          </code>
+        </article>
+      </section>
+      <section class="main-section" id="Function_declarations">
+        <header>Function declarations</header>
+        <article>
+         
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>
+              All the documentation in this page is taken from
+              <a
+                href="https://google.com"
+                target="_blank"
+                >GOOGLE</a
+              >
+            </li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
